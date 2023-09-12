@@ -3693,6 +3693,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyLevel: 1
   difficultyUI: {fileID: 998946397}
+  easyButton: {fileID: 1211397059}
+  mediumButton: {fileID: 1948747906}
+  hardButton: {fileID: 1238902983}
 --- !u!1 &1633822921
 GameObject:
   m_ObjectHideFlags: 0
