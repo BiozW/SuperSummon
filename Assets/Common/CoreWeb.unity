@@ -2355,8 +2355,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poisonSpawnRate: 1
   waterfall: 0
-  minH: -1
-  maxH: 1
+  minH: -10
+  maxH: 10
   poisonSpawn: {fileID: 2832222150042712331, guid: 9a7fcd07625d6eb4491a8517dfce0e13, type: 3}
 --- !u!4 &991235191
 Transform:
@@ -2371,7 +2371,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094115972
 GameObject:
@@ -2382,6 +2382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1094115973}
+  - component: {fileID: 1094115974}
   m_Layer: 0
   m_Name: HeartSpawner
   m_TagString: Untagged
@@ -2402,8 +2403,30 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1094115974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094115972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220afc15d0d655342b22419208f81059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heartSpawnRate: 1
+  shieldSpawnRate: 1
+  poisonSpawnRate: 1
+  minH: -10
+  maxH: 10
+  heartSpawn: {fileID: 6967076520156425937, guid: d9576867a174d6b459cd593e1cabae01, type: 3}
+  shieldSpawn: {fileID: 0}
+  poisonSpawn: {fileID: 0}
+  spawnPoint: {fileID: 0}
+  spawnInterval: 2
 --- !u!1 &1181604140
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,9 +2930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyLevel: 1
   difficultyUI: {fileID: 663842208}
-  easyButton: {fileID: 0}
-  mediumButton: {fileID: 0}
-  hardButton: {fileID: 0}
 --- !u!1 &1633822921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3035,60 +3055,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1687424373
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1687424375}
-  - component: {fileID: 1687424374}
-  m_Layer: 0
-  m_Name: ItemSpawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1687424374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687424373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 220afc15d0d655342b22419208f81059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heartSpawnRate: 1
-  shieldSpawnRate: 1
-  poisonSpawnRate: 1
-  minH: -1
-  maxH: 1
-  heartSpawn: {fileID: 6967076520156425937, guid: d9576867a174d6b459cd593e1cabae01, type: 3}
-  shieldSpawn: {fileID: 0}
-  poisonSpawn: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  spawnInterval: 2
---- !u!4 &1687424375
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1687424373}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 600, y: 612, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1770050862
 GameObject:
