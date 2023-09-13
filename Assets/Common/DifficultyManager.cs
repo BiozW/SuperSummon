@@ -28,7 +28,7 @@ namespace SuperGame
             {
                 /*heartSpawn = 2f;
                 shieldSpawn = 2f;
-                poisonSpawn = 0f;*/
+                Destroy(poisonSpawn)*/
             }
 
             if(difficultyLevel == 2)
@@ -40,8 +40,8 @@ namespace SuperGame
 
             if(difficultyLevel == 3)
             {
-                /*heartSpawn = 0f;
-                sheildSpawn = 0f;
+                /*Destroy(heartSpawn);
+                Destroy(shieldSpawn);
                 poisonSpawn = 3f;*/
             }
         }
