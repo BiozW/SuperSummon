@@ -31,23 +31,23 @@ namespace SuperGame
 
             if(difficultyLevel == 1)
             {
-                /*heartSpawn = 2f;
-                shieldSpawn = 2f;
+                /*heartSpawn = 10f / 1f;
+                shieldSpawn = 10f / 1f;
                 Destroy(PoisonSpawner);*/
             }
 
             if(difficultyLevel == 2)
             {
-                /*heartSpawn = 1f;
-                shieldSpawn = 1f;
-                poisonSpawn = 1f;*/
+                /*heartSpawn = 10f / 1f;
+                shieldSpawn = 10f / 1f;
+                poisonSpawn = 10f / 1f;*/
             }
 
             if(difficultyLevel == 3)
             {
                 /*Destroy(HeartSpawner);
                 Destroy(ShieldSpawner);
-                poisonSpawn = 3f;*/
+                poisonSpawn = 10f / 3f;*/
             }
         }
     }
