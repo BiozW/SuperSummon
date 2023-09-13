@@ -13,6 +13,10 @@ namespace SuperGame
         public GameObject HeartSpawner;
         public GameObject ShieldSpawner;
         public GameObject PoisonSpawner;
+
+        [Header("Divider")]
+        public float Dividend = 10f;
+        public float Divior = 1f;
         
         /*public float heartSpawn = 1.0f;
         public float shieldSpawn = 1.0f;
@@ -31,8 +35,8 @@ namespace SuperGame
 
             if(difficultyLevel == 1)
             {
-                /*heartSpawn = 10f / 1f;
-                shieldSpawn = 10f / 1f;
+                /*heartSpawn = Dividend / Divior;
+                shieldSpawn = Dividend / Divior;
                 Destroy(PoisonSpawner);*/
             }
 
