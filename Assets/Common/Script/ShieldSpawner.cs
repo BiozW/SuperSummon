@@ -14,6 +14,7 @@ namespace SuperGame
         public float maxH = 1f;
         public GameObject shieldSpawn; // Array of item prefabs to spawn.
 
+        //public DifficultyManager difficultyManager;
         protected override void InitAfterAwake()
         {
             
@@ -21,6 +22,8 @@ namespace SuperGame
 
         private void Update()
         {
+
+            //sheildSpawnRate = difficultyManager.shieldSpawn;
             if (waterfall == true)
             {
                 OnEnable();
@@ -40,8 +43,8 @@ namespace SuperGame
 
         private void SpawnSheild()
         {
-            GameObject pipes = Instantiate(shieldSpawn, transform.position, Quaternion.identity);
-            pipes.transform.position += Vector3.up * Random.Range(minH, maxH);
+            GameObject shield = Instantiate(shieldSpawn, transform.position, Quaternion.identity);
+            shield.transform.position += Vector3.up * Random.Range(minH, maxH);
         }
     }
 }

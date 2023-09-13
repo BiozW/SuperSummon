@@ -11,7 +11,7 @@ namespace SuperGame
         public float maxH = 1f;
         public GameObject heartSpawn; // Array of item prefabs to spawn.
 
-        public DifficultyManager difficultyManager;
+        //public DifficultyManager difficultyManager;
 
         public bool waterfall = false;
 
@@ -21,7 +21,7 @@ namespace SuperGame
         }
         private void Update()
         {
-            heartSpawnRate = difficultyManager.heartSpawn;
+            //heartSpawnRate = difficultyManager.heartSpawn;
             if (waterfall == true)
             {
                 OnEnable();
@@ -41,8 +41,8 @@ namespace SuperGame
 
         private void SpawnHeart()
         {
-            GameObject pipes = Instantiate(heartSpawn, transform.position, Quaternion.identity);
-            pipes.transform.position += Vector3.up * Random.Range(minH, maxH);
+            GameObject heart = Instantiate(heartSpawn, transform.position, Quaternion.identity);
+            heart.transform.position += Vector3.up * Random.Range(minH, maxH);
         }
     }
 }

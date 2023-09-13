@@ -15,6 +15,7 @@ namespace SuperGame
         public float maxH = 1f;
         public GameObject poisonSpawn; // Array of item prefabs to spawn.
 
+        //public DifficultyManager difficultyManager;
         protected override void InitAfterAwake()
         {
             
@@ -22,6 +23,7 @@ namespace SuperGame
 
         private void Update()
         {
+            //poisonSpawnRate = difficultyManager.poisonSpawn;
             if (waterfall == true)
             {
                 OnEnable();
@@ -41,8 +43,8 @@ namespace SuperGame
 
         private void SpawnPoison()
         {
-            GameObject pipes = Instantiate(poisonSpawn, transform.position, Quaternion.identity);
-            pipes.transform.position += Vector3.up * Random.Range(minH, maxH);
+            GameObject poison = Instantiate(poisonSpawn, transform.position, Quaternion.identity);
+            poison.transform.position += Vector3.up * Random.Range(minH, maxH);
         }
     }
 }
