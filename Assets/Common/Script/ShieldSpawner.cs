@@ -16,12 +16,12 @@ namespace SuperGame
         public GameObject shieldSpawn; // Array of item prefabs to spawn.
         protected override void InitAfterAwake()
         {
+            sheildSpawnRate = difficultyManager.shieldSpawn;
             
         }
 
         private void Update()
         {
-            sheildSpawnRate = difficultyManager.shieldSpawn;
             if (waterfall == true)
             {
                 OnEnable();
