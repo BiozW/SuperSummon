@@ -8,41 +8,51 @@ namespace SuperGame
         public int DifficultyLevel => difficultyLevel;
         [SerializeField] int difficultyLevel;
         [SerializeField] GameObject difficultyUI;
+
+        [Header("Spawner")]
+        public GameObject HeartSpawner;
+        public GameObject ShieldSpawner;
+        public GameObject PoisonSpawner;
+
+        [Header("Divider")]
+        public float Dividend = 10f;
+        public float Divior = 1f;
+        
+        /*public float heartSpawn = 1.0f;
+        public float shieldSpawn = 1.0f;
+        public float poisonSpawn = 1.0f;*/
         
         protected override void InitAfterAwake()
         {
             difficultyUI.SetActive(true);
         }
 
-
         public void SelectDifficultyLevel(int value)
         {
             difficultyLevel = value;
             difficultyUI.SetActive(false);
             GameManager.Instance.StartLevel();
-/*
+
             if(difficultyLevel == 1)
             {
-                HeartSpawner.Instance
-                GetComponent<HeartSpawner>().heartSpawnRate = 2f;
-                GetComponent<ShieldSpawner>().sheildSpawnRate = 1f;
-                GetComponent<PoisonSpawner>().poisonSpawnRate = 0f;
+                /*heartSpawn = Dividend / Divior;
+                shieldSpawn = Dividend / Divior;
+                Destroy(PoisonSpawner);*/
             }
 
             if(difficultyLevel == 2)
             {
-                GetComponent<itemSpawner>().heartSpawnRate = 1f;
-                GetComponent<itemSpawner>().sheildSpawnRate = 1f;
-                GetComponent<itemSpawner>().poisonSpawnRate = 1f;
+                /*heartSpawn = 10f / 1f;
+                shieldSpawn = 10f / 1f;
+                poisonSpawn = 10f / 1f;*/
             }
 
             if(difficultyLevel == 3)
             {
-                GetComponent<itemSpawner>().heartSpawnRate = 0f;
-                GetComponent<itemSpawner>().sheildSpawnRate = 0f;
-                GetComponent<itemSpawner>().poisonSpawnRate = 3f;
+                /*Destroy(HeartSpawner);
+                Destroy(ShieldSpawner);
+                poisonSpawn = 10f / 3f;*/
             }
-            */
         }
     }
 }
