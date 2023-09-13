@@ -1,8 +1,12 @@
+using PhEngine.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoisonSpawner : MonoBehaviour
+namespace SuperGame
+{
+    
+    public class PoisonSpawner : MonoBehaviour 
 {
     [SerializeField] float poisonSpawnRate = 1.0f;
     public bool waterfall = false;
@@ -37,3 +41,5 @@ public class PoisonSpawner : MonoBehaviour
         pipes.transform.position += Vector3.up * Random.Range(minH, maxH);
     }
 }
+}
+

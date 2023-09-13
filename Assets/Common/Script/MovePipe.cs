@@ -5,17 +5,17 @@ using UnityEngine;
 public class MovePipe : MonoBehaviour
 {
     public float speed = 5f;
-    private float leftEdge;
+    private float buttomEdge;
 
     private void Start()
     {
-        leftEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).x - 1f;
+        buttomEdge = Camera.main.ScreenToWorldPoint(Vector3.zero).y + 1f;
     }
     void Update()
     {
         transform.position += Vector3.left * speed * Time.deltaTime;
 
-        if (transform.position.x < leftEdge)
+        if (transform.position.y < buttomEdge)
         {
             Destroy(gameObject);
         }
