@@ -16,8 +16,14 @@ public class ItemSpawner : MonoBehaviour
     
     private float timeSinceLastSpawn = 0.0f;
 
+    public bool waterfall = false;
+
     private void Update()
     {
+        if (waterfall == true)
+        {
+            OnEnable();
+        }
     }
 
     private void SpawnRandomItem()
