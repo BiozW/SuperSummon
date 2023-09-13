@@ -40,7 +40,7 @@ namespace SuperGame
             {
                 /*heartSpawn = 1f;
                 shieldSpawn = 1f;
-                posionSpawn = 1f;*/
+                poisonSpawn = 1f;*/
             }
 
             if(difficultyLevel == 3)
