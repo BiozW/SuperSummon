@@ -7,6 +7,8 @@ namespace SuperGame
     {
         public int DifficultyLevel => difficultyLevel;
         //public ItemSpawner itemSpawner;
+        //public ShieldSpawner shieldSpawner;
+        //public PoisonSpawner poisonSpawner;
         [SerializeField] int difficultyLevel;
         [SerializeField] GameObject difficultyUI;
         
@@ -20,26 +22,30 @@ namespace SuperGame
             difficultyLevel = value;
             difficultyUI.SetActive(false);
             GameManager.Instance.StartLevel();
+            
+            /*float heartSpawn = GetComponent<itemSpawner>().heartSpawnRate;
+            float shieldSpawn = GetComponent<shieldSpawner>().sheildSpawnRate;
+            float poisonSpawn = GetComponent<poisonSpawner>().poisonSpawnRate;*/
 
             if(difficultyLevel == 1)
             {
-                /*GetComponent<itemSpawner>().heartSpawnRate = 2f;
-                GetComponent<itemSpawner>().sheildSpawnRate = 1f;
-                GetComponent<itemSpawner>().poisonSpawnRate = 0f;*/
+                /*heartSpawn = 2f;
+                shieldSpawn = 2f;
+                poisonSpawn = 0f;*/
             }
 
             if(difficultyLevel == 2)
             {
-                /*GetComponent<itemSpawner>().heartSpawnRate = 1f;
-                GetComponent<itemSpawner>().sheildSpawnRate = 1f;
-                GetComponent<itemSpawner>().poisonSpawnRate = 1f;*/
+                /*heartSpawn = 1f;
+                shieldSpawn = 1f;
+                posionSpawn = 1f;*/
             }
 
             if(difficultyLevel == 3)
             {
-                /*GetComponent<itemSpawner>().heartSpawnRate = 0f;
-                GetComponent<itemSpawner>().sheildSpawnRate = 0f;
-                GetComponent<itemSpawner>().poisonSpawnRate = 3f;*/
+                /*heartSpawn = 0f;
+                sheildSpawn = 0f;
+                poisonSpawn = 3f;*/
             }
         }
     }
