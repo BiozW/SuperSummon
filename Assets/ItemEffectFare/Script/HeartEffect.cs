@@ -3,17 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using PhEngine.Core;
 
-public class HeartEffect : MonoBehaviour
+namespace SuperGame
 {
-    // Start is called before the first frame update
-    void Start()
+    public class HeartEffect : Singleton<HeartEffect>
     {
+        private void OnTriggerEnter2D(Collider2D other) 
+        {
+            
+            if(other.CompareTag("Player"))
+            {
+                if(GameManager.Instance.GetLifeCount() < GameManager.Instance.GetMaxLifeCount()) 
+                {
+                    GameManager.Instance.AddLifeCount();
+                    Debug.Log("Healed");
+                    Destroy(other.gameObject); //เก็บแล้วitemหายไป
+            
+                }
+            }
+        }
+        protected override void InitAfterAwake()
+        {
+        
+        }
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
