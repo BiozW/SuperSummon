@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovePipe : MonoBehaviour
+public class ShieldMove : MonoBehaviour
 {
+    // Start is called before the first frame update
     public float speed = 5f;
     private float buttomEdge;
 

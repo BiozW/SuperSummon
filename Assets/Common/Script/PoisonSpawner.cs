@@ -13,6 +13,7 @@ namespace SuperGame
 
         public float minH = -1f;
         public float maxH = 1f;
+        public DifficultyManager difficultyManager;
         public GameObject poisonSpawn; // Array of item prefabs to spawn.
 
         //public DifficultyManager difficultyManager;
@@ -23,6 +24,7 @@ namespace SuperGame
 
         private void Update()
         {
+            poisonSpawnRate = difficultyManager.poisonSpawn;
             //poisonSpawnRate = difficultyManager.poisonSpawn;
             if (waterfall == true)
             {

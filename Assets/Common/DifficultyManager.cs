@@ -15,12 +15,16 @@ namespace SuperGame
         public GameObject PoisonSpawner;
 
         [Header("Divider")]
-        public float Dividend = 10f;
-        public float Divior = 1f;
+        public float DividendLv1 = 10f;
+        public float DividendLv2 = 10f;
+        public float DividendLv3 = 10f;
+        public float DiviorLv1 = 1f;
+        public float DiviorLv2 = 1f;
+        public float DiviorLv3 = 1f;
         
-        /*public float heartSpawn = 1.0f;
+        public float heartSpawn = 1.0f;
         public float shieldSpawn = 1.0f;
-        public float poisonSpawn = 1.0f;*/
+        public float poisonSpawn = 1.0f;
         
         protected override void InitAfterAwake()
         {
@@ -35,23 +39,23 @@ namespace SuperGame
 
             if(difficultyLevel == 1)
             {
-                /*heartSpawn = Dividend / Divior;
-                shieldSpawn = Dividend / Divior;
-                Destroy(PoisonSpawner);*/
+                heartSpawn = DividendLv1 / DiviorLv1;
+                shieldSpawn = DividendLv2 / DiviorLv2;
+                Destroy(PoisonSpawner);
             }
 
             if(difficultyLevel == 2)
             {
-                /*heartSpawn = 10f / 1f;
-                shieldSpawn = 10f / 1f;
-                poisonSpawn = 10f / 1f;*/
+                heartSpawn = DividendLv2 / DiviorLv2;
+                shieldSpawn = DividendLv2 / DiviorLv2;
+                poisonSpawn = DividendLv2 / DiviorLv2;
             }
 
             if(difficultyLevel == 3)
             {
-                /*Destroy(HeartSpawner);
+                Destroy(HeartSpawner);
                 Destroy(ShieldSpawner);
-                poisonSpawn = 10f / 3f;*/
+                poisonSpawn = DividendLv3 / DiviorLv3;
             }
         }
     }

@@ -6,14 +6,14 @@ namespace SuperGame
     public class HeartSpawner : Singleton<HeartSpawner>
     {
         public float heartSpawnRate = 1.0f;
-    
+        public bool waterfall = false;
         public float minH = -1f;
         public float maxH = 1f;
+        public DifficultyManager difficultyManager;
         public GameObject heartSpawn; // Array of item prefabs to spawn.
 
         //public DifficultyManager difficultyManager;
 
-        public bool waterfall = false;
 
         protected override void InitAfterAwake()
         {
@@ -21,6 +21,7 @@ namespace SuperGame
         }
         private void Update()
         {
+            heartSpawnRate = difficultyManager.heartSpawn;
             //heartSpawnRate = difficultyManager.heartSpawn;
             if (waterfall == true)
             {

@@ -12,6 +12,7 @@ namespace SuperGame
 
         public float minH = -1f;
         public float maxH = 1f;
+        public DifficultyManager difficultyManager;
         public GameObject shieldSpawn; // Array of item prefabs to spawn.
 
         //public DifficultyManager difficultyManager;
@@ -22,6 +23,7 @@ namespace SuperGame
 
         private void Update()
         {
+            sheildSpawnRate = difficultyManager.shieldSpawn;
 
             //sheildSpawnRate = difficultyManager.shieldSpawn;
             if (waterfall == true)

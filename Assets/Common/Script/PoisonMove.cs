@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PoisonManager : MonoBehaviour
+public class PoisonMove : MonoBehaviour
 {
     public float speed = 5f;
     private float buttomEdge;
