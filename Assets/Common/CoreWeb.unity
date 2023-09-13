@@ -1146,7 +1146,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &460570929
 MonoBehaviour:
@@ -2359,7 +2359,7 @@ MonoBehaviour:
   minH: -10
   maxH: 10
   difficultyManager: {fileID: 1602366012}
-  poisonSpawn: {fileID: 8359998235012338531, guid: 5c7456ceba3dad24aa9bfa915e91e0a9, type: 3}
+  poisonSpawn: {fileID: 2461559320221582122, guid: 863461ba012c60644b1728b71aa90167, type: 3}
 --- !u!4 &991235191
 Transform:
   m_ObjectHideFlags: 0
@@ -2373,7 +2373,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &991235192
 MonoBehaviour:
@@ -2422,7 +2422,7 @@ MonoBehaviour:
   minH: -1
   maxH: 1
   difficultyManager: {fileID: 1602366012}
-  shieldSpawn: {fileID: 2870235454192594455, guid: 9a7fcd07625d6eb4491a8517dfce0e13, type: 3}
+  shieldSpawn: {fileID: 69595638064287941, guid: 6c53a25cd3eaf6948997ccc2486cf436, type: 3}
 --- !u!4 &1037554532
 Transform:
   m_ObjectHideFlags: 0
@@ -2436,7 +2436,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1037554533
 MonoBehaviour:
@@ -2450,6 +2450,53 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1089456863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1089456865}
+  - component: {fileID: 1089456864}
+  m_Layer: 0
+  m_Name: EffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1089456864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089456863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3c83055df607449bb389b781d0f21b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HeartItem: {fileID: 5111472105364432967, guid: 7b5213afc63811a4cb74c935300ba679, type: 3}
+  ShieldItem: {fileID: 69595638064287941, guid: 6c53a25cd3eaf6948997ccc2486cf436, type: 3}
+  PoisonItem: {fileID: 2461559320221582122, guid: 863461ba012c60644b1728b71aa90167, type: 3}
+--- !u!4 &1089456865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089456863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 455.96988, y: 289.39783, z: 2.1122797}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1094115972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2528,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1094115974
 MonoBehaviour:
@@ -2500,7 +2547,7 @@ MonoBehaviour:
   minH: -1
   maxH: 1
   difficultyManager: {fileID: 1602366012}
-  heartSpawn: {fileID: 5044363153995048976, guid: ba26455ca82272a42b5ed9ebe1bd0d3c, type: 3}
+  heartSpawn: {fileID: 5111472105364432967, guid: 7b5213afc63811a4cb74c935300ba679, type: 3}
 --- !u!114 &1094115975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3138,7 +3185,7 @@ MonoBehaviour:
   currentDelay: 5
   obstacleList:
   - {fileID: 550454028}
-  - {fileID: 460570929}
+  - {fileID: 0}
 --- !u!4 &1639198666
 Transform:
   m_ObjectHideFlags: 0
