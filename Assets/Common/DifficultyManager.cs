@@ -9,6 +9,10 @@ namespace SuperGame
         [SerializeField] int difficultyLevel;
         [SerializeField] GameObject difficultyUI;
         
+        /*public float heartSpawn = 1.0f;
+        public float shieldSpawn = 1.0f;
+        public float poisonSpawn = 1.0f;*/
+        
         protected override void InitAfterAwake()
         {
             difficultyUI.SetActive(true);
@@ -19,10 +23,6 @@ namespace SuperGame
             difficultyLevel = value;
             difficultyUI.SetActive(false);
             GameManager.Instance.StartLevel();
-            
-            /*float heartSpawn = ItemSpawner.Instance.heartSpawnRate;
-            float shieldSpawn = ShieldSpawner.Instance.sheildSpawnRate;
-            float poisonSpawn = PoisonSpawner.Instance.poisonSpawnRate;*/
 
             if(difficultyLevel == 1)
             {
