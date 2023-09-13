@@ -28,7 +28,7 @@ namespace SuperGame
             {
                 /*heartSpawn = 2f;
                 shieldSpawn = 2f;
-                Destroy(poisonSpawn)*/
+                Destroy(poisonSpawn);*/
             }
 
             if(difficultyLevel == 2)
