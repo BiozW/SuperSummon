@@ -2367,7 +2367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991235189}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.700001, y: 6, z: -0.057346348}
+  m_LocalPosition: {x: -8.700001, y: 10, z: -0.057346348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2429,7 +2429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037554530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 6.17, z: -0.096829996}
+  m_LocalPosition: {x: -0.01, y: 9.96, z: -0.096829996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2474,7 +2474,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1094115972}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.5, y: 6, z: -0.057346348}
+  m_LocalPosition: {x: 8.71, y: 9.95, z: -0.057346348}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2494,15 +2494,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartSpawnRate: 1
-  shieldSpawnRate: 1
-  poisonSpawnRate: 1
   minH: -10
   maxH: 10
   heartSpawn: {fileID: 6967076520156425937, guid: d9576867a174d6b459cd593e1cabae01, type: 3}
-  shieldSpawn: {fileID: 0}
-  poisonSpawn: {fileID: 0}
-  spawnPoint: {fileID: 0}
-  spawnInterval: 2
+  difficultyManager: {fileID: 1602366012}
   waterfall: 0
 --- !u!114 &1094115975
 MonoBehaviour:
@@ -3019,6 +3014,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   difficultyLevel: 1
   difficultyUI: {fileID: 663842208}
+  heartSpawn: 1
+  shieldSpawn: 1
+  poisonSpawn: 1
 --- !u!1 &1633822921
 GameObject:
   m_ObjectHideFlags: 0
