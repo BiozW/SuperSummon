@@ -16,7 +16,6 @@ namespace SuperGame
         public DifficultyManager difficultyManager;
         public GameObject poisonSpawn; // Array of item prefabs to spawn.
 
-        //public DifficultyManager difficultyManager;
         protected override void InitAfterAwake()
         {
             
@@ -25,7 +24,6 @@ namespace SuperGame
         private void Update()
         {
             poisonSpawnRate = difficultyManager.poisonSpawn;
-            //poisonSpawnRate = difficultyManager.poisonSpawn;
             if (waterfall == true)
             {
                 OnEnable();

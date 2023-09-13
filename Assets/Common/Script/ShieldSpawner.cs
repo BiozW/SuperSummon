@@ -14,8 +14,6 @@ namespace SuperGame
         public float maxH = 1f;
         public DifficultyManager difficultyManager;
         public GameObject shieldSpawn; // Array of item prefabs to spawn.
-
-        //public DifficultyManager difficultyManager;
         protected override void InitAfterAwake()
         {
             
@@ -24,8 +22,6 @@ namespace SuperGame
         private void Update()
         {
             sheildSpawnRate = difficultyManager.shieldSpawn;
-
-            //sheildSpawnRate = difficultyManager.shieldSpawn;
             if (waterfall == true)
             {
                 OnEnable();

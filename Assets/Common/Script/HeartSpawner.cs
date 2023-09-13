@@ -12,8 +12,6 @@ namespace SuperGame
         public DifficultyManager difficultyManager;
         public GameObject heartSpawn; // Array of item prefabs to spawn.
 
-        //public DifficultyManager difficultyManager;
-
 
         protected override void InitAfterAwake()
         {
@@ -22,7 +20,6 @@ namespace SuperGame
         private void Update()
         {
             heartSpawnRate = difficultyManager.heartSpawn;
-            //heartSpawnRate = difficultyManager.heartSpawn;
             if (waterfall == true)
             {
                 OnEnable();
