@@ -10,9 +10,9 @@ namespace SuperGame
         [SerializeField] GameObject difficultyUI;
 
         [Header("Spawner")]
-        [SerializeField] GameObject ItemSpawner;
-        [SerializeField] GameObject ShieldSpawner;
-        [SerializeField] GameObject PoisonSpawner;
+        public GameObject HeartSpawner;
+        public GameObject ShieldSpawner;
+        public GameObject PoisonSpawner;
         
         /*public float heartSpawn = 1.0f;
         public float shieldSpawn = 1.0f;
@@ -45,7 +45,7 @@ namespace SuperGame
 
             if(difficultyLevel == 3)
             {
-                /*Destroy(ItemSpawner);
+                /*Destroy(HeartSpawner);
                 Destroy(ShieldSpawner);
                 poisonSpawn = 3f;*/
             }
