@@ -6,9 +6,6 @@ namespace SuperGame
     public class DifficultyManager : Singleton<DifficultyManager>
     {
         public int DifficultyLevel => difficultyLevel;
-        //public ItemSpawner itemSpawner;
-        //public ShieldSpawner shieldSpawner;
-        //public PoisonSpawner poisonSpawner;
         [SerializeField] int difficultyLevel;
         [SerializeField] GameObject difficultyUI;
         
@@ -23,9 +20,9 @@ namespace SuperGame
             difficultyUI.SetActive(false);
             GameManager.Instance.StartLevel();
             
-            /*float heartSpawn = GetComponent<itemSpawner>().heartSpawnRate;
-            float shieldSpawn = GetComponent<shieldSpawner>().sheildSpawnRate;
-            float poisonSpawn = GetComponent<poisonSpawner>().poisonSpawnRate;*/
+            /*float heartSpawn = ItemSpawner.Instance.heartSpawnRate;
+            float shieldSpawn = ShieldSpawner.Instance.sheildSpawnRate;
+            float poisonSpawn = PoisonSpawner.Instance.poisonSpawnRate;*/
 
             if(difficultyLevel == 1)
             {
