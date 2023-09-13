@@ -871,7 +871,7 @@ GameObject:
   - component: {fileID: 1636104582}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1020,7 +1020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hurtSoundId: hurt
   maxHealth: 5
-  immunityDuration: 0
+  immunityDuration: 2
   currentHealth: 5
   renderer: {fileID: 1636104580}
   ui: {fileID: 1344074158}
