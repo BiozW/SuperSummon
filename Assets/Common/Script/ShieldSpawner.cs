@@ -1,19 +1,15 @@
-using PhEngine.Core;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SuperGame
+public class ShieldSpawner : MonoBehaviour
 {
-    
-    public class PoisonSpawner : MonoBehaviour 
-{
-    public float poisonSpawnRate = 1.0f;
+    public float sheildSpawnRate = 1.0f;
     public bool waterfall = false;
     
     public float minH = -1f;
     public float maxH = 1f;
-    public GameObject poisonSpawn; // Array of item prefabs to spawn.
+    public GameObject shieldSpawn; // Array of item prefabs to spawn.
     
 
     private void Update()
@@ -27,19 +23,17 @@ namespace SuperGame
 
     private void OnEnable()
     {
-        InvokeRepeating(nameof(SpawnPoison), poisonSpawnRate, poisonSpawnRate);
+        InvokeRepeating(nameof(SpawnSheild), sheildSpawnRate, sheildSpawnRate);
     }
 
     private void OnDisable()
     {
-        CancelInvoke(nameof(SpawnPoison));
+        CancelInvoke(nameof(SpawnSheild));
     }
 
-    private void SpawnPoison()
+    private void SpawnSheild()
     {
-        GameObject pipes = Instantiate(poisonSpawn, transform.position, Quaternion.identity);
+        GameObject pipes = Instantiate(shieldSpawn, transform.position, Quaternion.identity);
         pipes.transform.position += Vector3.up * Random.Range(minH, maxH);
     }
 }
-}
-

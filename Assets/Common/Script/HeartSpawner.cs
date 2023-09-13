@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class ItemSpawner : MonoBehaviour
+public class HeartSpawner : MonoBehaviour
 {
-    [SerializeField] float heartSpawnRate = 1.0f;
+    public float heartSpawnRate = 1.0f;
     [SerializeField] float shieldSpawnRate = 1.0f;
     [SerializeField] float poisonSpawnRate = 1.0f;
     
