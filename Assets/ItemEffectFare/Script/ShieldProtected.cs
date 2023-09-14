@@ -6,12 +6,12 @@ namespace SuperGame
     public class ShieldProtected : Singleton<ShieldProtected>
 {
     [SerializeField] GameObject ShieldAura;
-    private void OnTriggerEnter2D(Collider2D other) 
+    private void OnTriggerEnter2D(Collider2D Shielded) 
     {
         
-        if(other.CompareTag("Obstacle"))//เมื่อชนอุปสรรคแล้วหาย
+        if(Shielded.CompareTag("Obstacle"))//เมื่อชนอุปสรรคแล้วหาย
         {
-            Destroy(other.gameObject);
+            Destroy(Shielded.gameObject);
             Destroy(ShieldAura.gameObject);
             Debug.Log("ติดเว้ย");
         }
