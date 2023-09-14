@@ -410,6 +410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemPoison
       objectReference: {fileID: 0}
+    - target: {fileID: 2461559320221582122, guid: 4605f29c4134fe5419ab3f9c8e1d4898, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7113319904038925121, guid: 4605f29c4134fe5419ab3f9c8e1d4898, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -1248,6 +1252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 506294595}
   - component: {fileID: 506294594}
+  - component: {fileID: 506294596}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1295,6 +1300,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506294596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506294593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &550454027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1412,6 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 572571055}
   - component: {fileID: 572571056}
+  - component: {fileID: 572571057}
   m_Layer: 0
   m_Name: DamageEffectPlayer
   m_TagString: Untagged
@@ -1447,6 +1465,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &572571057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572571054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &589947362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2469,7 +2499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1037554531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3042,6 +3072,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1349913110}
   - component: {fileID: 1349913109}
+  - component: {fileID: 1349913111}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -3085,6 +3116,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1349913111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1349913108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1580134003
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,6 +3272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602366011}
   - component: {fileID: 1602366012}
+  - component: {fileID: 1602366013}
   m_Layer: 0
   m_Name: DifficultyManager
   m_TagString: Untagged
@@ -3277,6 +3321,18 @@ MonoBehaviour:
   heartSpawn: 1
   shieldSpawn: 1
   poisonSpawn: 1
+--- !u!114 &1602366013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602366010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1633822921
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,6 +3917,7 @@ GameObject:
   - component: {fileID: 2049417091}
   - component: {fileID: 2049417090}
   - component: {fileID: 2049417092}
+  - component: {fileID: 2049417093}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3998,3 +4055,15 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2049417093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049417089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e9577ad4af710e46bb85157283a489d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
