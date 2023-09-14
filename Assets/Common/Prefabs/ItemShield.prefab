@@ -12,8 +12,6 @@ GameObject:
   - component: {fileID: 7424802874333146620}
   - component: {fileID: 8802841967063973201}
   - component: {fileID: 1915181119566007159}
-  - component: {fileID: -8586330824695429452}
-  - component: {fileID: 7097165736863435506}
   - component: {fileID: 1147660349634468136}
   m_Layer: 0
   m_Name: ItemShield
@@ -126,32 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8586330824695429452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69595638064287941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8104789fbe5e9f54ab432eb0b10baa78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Armor: {fileID: 1952596564978027164, guid: f64c0128f8e86bc489f25c007ca0d907, type: 3}
---- !u!114 &7097165736863435506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 69595638064287941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65f2cf0bf941c8041ad9a35a8fd0de74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ShieldAura: {fileID: 1952596564978027164, guid: f64c0128f8e86bc489f25c007ca0d907, type: 3}
 --- !u!114 &1147660349634468136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,7 +131,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69595638064287941}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 34c777b3a12e7bb49bebbd544cb28b3f, type: 3}
   m_Name: 
