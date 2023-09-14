@@ -25,12 +25,12 @@ namespace SuperGame
             }
             PoisonUI.SetActive(false); isPoisoning = false;
         }
-        private void OnTriggerEnter2D(Collider2D other) 
+        private void OnTriggerEnter2D(Collider2D Poison) 
         {
-            if(other.CompareTag("Player"))
+            if(Poison.CompareTag("Player"))
             {
             StartCoroutine(PoisonCountdown());
-            Destroy(other.gameObject); //เก็บแล้วitemหายไป
+            Destroy(Poison.gameObject); //เก็บแล้วitemหายไป
             
             }
             

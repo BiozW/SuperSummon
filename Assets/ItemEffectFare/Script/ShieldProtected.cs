@@ -8,13 +8,13 @@ namespace SuperGame
     [SerializeField] GameObject ShieldAura;
     private void OnTriggerEnter2D(Collider2D other) 
     {
-        
-        if(other.CompareTag("Obstacle"))//เมื่อชนอุปสรรคแล้วหาย
+        /*
+        if(Shielded.CompareTag("Obstacle"))//เมื่อชนอุปสรรคแล้วหาย
         {
-            Destroy(other.gameObject);
+            Destroy(Shielded.gameObject);
             Destroy(ShieldAura.gameObject);
             Debug.Log("ติดเว้ย");
-        }
+        }*/
 
     }
     protected override void InitAfterAwake()
